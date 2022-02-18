@@ -1,0 +1,11 @@
+Galaxy Z, Samsung Galaxy Z Flip 35G, smartphones, 23, 71999, 17/03/2020
+Galaxy S, Samsung Galaxy S22 Ultra, smartphones, 27, 93300, 23/04/2021
+iPhone 13, Apple the ultimate smartphone, smartphones, 15, 87890, 22/02/2020
+Galaxy Tab S7, Samsung compact Tablet, tablets, 9, 76999, 27/05/2021
+iPad mini, Apple iPad mini iOS Tablet, tablets, 11, 46900, 13/12/2021
+Crystal 4K UHD, Samsung Crystal 4K 138cm 43inch Television, smart tv, 6, 53990, 10/10/2020
+MacBook Pro, Apple nextGen Laptop with M1 chip, laptops, 21, 122990, 29/09/2019
+IdeaPad Slim 3i, Lenovo 15inch laptop, laptops, 29, 37190, 10/02/2022
+HP Spectre x360, HP Premium laptop, laptops, 28, 99990, 07/01/2022
+Watch Series 7, Apple full screen watch, watches, 17, 35475, 30/12/2020
+Galaxy Watch 4, Samsung Galaxy Watch4 Classic, watches, 25, 29380, 04/02/2022
