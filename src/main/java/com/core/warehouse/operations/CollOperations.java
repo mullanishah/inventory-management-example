@@ -13,20 +13,20 @@ import com.core.warehouse.pojo.WarehouseItem;
  */
 public interface CollOperations {
 
-	boolean addItem(WarehouseItem item, HashMap<Integer, WarehouseItem> itemMap) throws WarehouseException;
-	boolean removeItem(Integer itemCode, HashMap<Integer, WarehouseItem> itemMap) throws WarehouseException;
+	boolean addItem(WarehouseItem item, HashMap<Long, WarehouseItem> itemMap) throws WarehouseException;
+	boolean removeItem(Long itemCode, HashMap<Long, WarehouseItem> itemMap) throws WarehouseException;
 	
-	ArrayList<WarehouseItem> displayItems(Map<Integer, WarehouseItem> itemMap) throws WarehouseException;
+	ArrayList<WarehouseItem> displayItems(Map<Long, WarehouseItem> itemMap) throws WarehouseException;
 	
-	void sortItemsByPrice(HashMap<Integer, WarehouseItem> itemMap);
-	ArrayList<WarehouseItem> sortByPrice(HashMap<Integer, WarehouseItem> itemMap);
-	Map<Integer, WarehouseItem> sortItemsByItemCode(Map<Integer, WarehouseItem> itemMap);
+	void sortItemsByPrice(HashMap<Long, WarehouseItem> itemMap);
+	ArrayList<WarehouseItem> sortByPrice(HashMap<Long, WarehouseItem> itemMap);
+	Map<Integer, WarehouseItem> sortItemsByItemCode(Map<Long, WarehouseItem> itemMap);
 	
-	void sortItemsByShipment(Map<Integer, WarehouseItem> itemMap);
-	void sortItemsByCategory(Map<Integer, WarehouseItem> itemMap);
+	void sortItemsByShipment(Map<Long, WarehouseItem> itemMap);
+	void sortItemsByCategory(Map<Long, WarehouseItem> itemMap);
 	
-	WarehouseItem searchItemByTitle(String title, Map<Integer, WarehouseItem> itemMap);
-	WarehouseItem searchItemByItemCode(long itemCode, Map<Integer, WarehouseItem> itemMap);
+	WarehouseItem searchItemByTitle(String title, Map<Long, WarehouseItem> itemMap);
+	WarehouseItem searchItemByItemCode(Long itemCode, Map<Integer, WarehouseItem> itemMap);
 	
 	boolean increaseQuantity() throws WarehouseException;;
 	boolean decreaseQuantity() throws WarehouseException;;
