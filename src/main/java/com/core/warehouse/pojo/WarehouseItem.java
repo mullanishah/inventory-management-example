@@ -15,13 +15,13 @@ public class WarehouseItem implements Serializable {
 	private long itemCode;
 	private String title;
 	private String description;
-	private Integer quantity;
+	private int quantity;
 	private String category;
 	private double price;
 	private Date shipmentDate;
 	
-	public WarehouseItem(long itemCode, String title, String description, String category, Integer quantity, 
-			double price, Date shipmentDate) {
+	public WarehouseItem(long itemCode, String title, String description, String category, Date shipmentDate, int quantity, 
+			double price) {
 		super();
 		this.itemCode = itemCode;
 		this.title = title;

@@ -17,7 +17,7 @@ public class IORelatedOpearations {
 	
 	private static final String CART_FILE = "cartFile.ser";
 	
-	public static void saveToFile(Map<Long, WarehouseItem> itemMap) throws Exception {
+	public static void saveCartDataToFile(Map<Long, WarehouseItem> itemMap) throws Exception {
 		
 		try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(CART_FILE));){
 			out.writeObject(itemMap);
@@ -35,7 +35,7 @@ public class IORelatedOpearations {
 				itemMap = (Map<Long, WarehouseItem>) in.readObject();
 			}
 		}
-		System.out.println("File restored successfully: " + itemMap);
+		System.out.println("Cart file restored successfully: " + itemMap);
 		return itemMap;
 	}
 
