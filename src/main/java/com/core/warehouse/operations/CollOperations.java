@@ -18,9 +18,8 @@ public interface CollOperations {
 	
 	ArrayList<WarehouseItem> displayItems(Map<Long, WarehouseItem> itemMap) throws WarehouseException;
 	
-	void sortItemsByPrice(HashMap<Long, WarehouseItem> itemMap);
-	ArrayList<WarehouseItem> sortByPrice(HashMap<Long, WarehouseItem> itemMap);
-	Map<Integer, WarehouseItem> sortItemsByItemCode(Map<Long, WarehouseItem> itemMap);
+	ArrayList<WarehouseItem> sortItemsByPrice(HashMap<Long, WarehouseItem> itemMap);
+	Map<Long, WarehouseItem> sortItemsByItemCode(Map<Long, WarehouseItem> itemMap);
 	
 	void sortItemsByShipment(Map<Long, WarehouseItem> itemMap);
 	void sortItemsByCategory(Map<Long, WarehouseItem> itemMap);

@@ -126,13 +126,15 @@ public class WarehouseUIApplication extends JFrame implements ActionListener {
 				boolean status = collOperations.addItem(item, itemMap);
 				String statusMsg = (status == true) ? "Item added successfully!" : "Item not added.";
 				JOptionPane.showMessageDialog(WarehouseUIApplication.this, statusMsg);
+				
 			} else if(ae.getSource() == remove) {
 				boolean status = collOperations.removeItem(Long.parseLong(texts[0].getText()), itemMap);
 				String statusMsg = (status == true)? "Item removed" : "Item not removed.";
 				JOptionPane.showMessageDialog(WarehouseUIApplication.this, statusMsg);
+				
 			} else if(ae.getSource() == sort) {
 				tarea.setText("");
-				ArrayList<WarehouseItem> list = collOperations.sortByPrice(itemMap);
+				ArrayList<WarehouseItem> list = collOperations.sortItemsByPrice(itemMap);
 				for(WarehouseItem item : list) 
 					tarea.append(item.toString() + "\n");
 				dialog.setVisible(true);

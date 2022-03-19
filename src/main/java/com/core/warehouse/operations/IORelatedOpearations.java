@@ -38,5 +38,14 @@ public class IORelatedOpearations {
 		System.out.println("Cart file restored successfully: " + itemMap);
 		return itemMap;
 	}
+	
+	public static Boolean clearCartFile() {
+		
+		File cartFile = new File(CART_FILE);
+		if(cartFile.exists() && cartFile.isFile() && cartFile.canRead()) {
+			return cartFile.delete();
+		}
+		return false;
+	}
 
 }
