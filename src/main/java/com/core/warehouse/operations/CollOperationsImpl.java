@@ -66,12 +66,10 @@ public class CollOperationsImpl implements CollOperations {
 
 			@Override
 			public int compare(WarehouseItem w1, WarehouseItem w2) {
-				
 				return ((Double)w1.getPrice()).compareTo(w2.getPrice());
 			}
 		});
-		return itemList;
-		 
+		return itemList;	 
 	}
 
 	@Override
